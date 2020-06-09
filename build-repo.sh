@@ -4,7 +4,7 @@ set -e
 echo "** Building repository"
 set -x
 
-hhvm --hphp -t hhbc --module vendor --ffile run.hack \
+hhvm --hphp -t hhbc --module vendor --module src --ffile run.hack \
   --output-dir tmp \
   --file-cache tmp/file.cache
 
