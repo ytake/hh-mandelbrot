@@ -1,0 +1,26 @@
+{
+  "name": "ytake/hh-mandelbrot",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yuuki Takezawa",
+      "email": "yuuki.takezawa@comnect.jp.net"
+    }
+  ],
+  "require": {
+    "hhvm": "^4.58",
+    "hhvm/hhvm-autoload": "^3.0"
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "scripts": {
+    "register": [
+      "hhvm ./vendor/bin/hh-autoload.hack"
+    ]
+  }
+}
