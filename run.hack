@@ -1,8 +1,8 @@
 #!/usr/bin/env hhvm
 
 <<__EntryPoint>>
-async function main(): Awaitable<void> {
-  await (new Mandelbrot())->run();
+function main(): void {
+  (new Mandelbrot())->run();
 }
 
 use function printf;
@@ -13,7 +13,7 @@ final class Mandelbrot {
   const int BAILOUT = 16;
   const int MAX_ITERATIONS = 1000;
   
-  public async function run(): Awaitable<void> {
+  public function run(): void {
     $d1 = microtime(true);
     for ($y = -39; $y < 39; $y++) {
       for ($x = -39; $x < 39; $x++) {
